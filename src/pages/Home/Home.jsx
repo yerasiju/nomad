@@ -35,7 +35,7 @@ const Home = () => {
             </h1>
             <button
               className={styles.ctaButton}
-              onClick={() => (window.location.href = "/dishes")}
+              onClick={() => (window.location.href = "/nomad/dishes")}
             >
               Explore Dishes
             </button>

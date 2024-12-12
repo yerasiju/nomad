@@ -55,7 +55,7 @@ const Dishes = () => {
               alt={dish.name}
               className={styles.dishImage}
             />
-            <Link to={`/dish/${dish.id}`} className={styles.dishLink}>
+            <Link to={`/nomad/dish/${dish.id}`} className={styles.dishLink}>
               View Details
             </Link>
           </li>
