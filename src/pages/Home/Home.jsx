@@ -106,8 +106,6 @@ const Home = () => {
           </div>
         ))}
       </div>
-
-      <Reserve></Reserve>
     </>
   );
 };

@@ -1,103 +1,48 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import "./Cooking.css";
 
-const Cooking = () => {
+const CookingPage = () => {
   return (
-    <div>
-      <h1>Cooking</h1>
-
-      <section>
-        <h2>Cooking Classes</h2>
+    <div className="cooking-page">
+      <h1 className="cooking-page-title">Traditional Cooking Techniques</h1>
+      <div className="cooking-page-content">
+        <h2>Slow-Cooking over an Open Fire</h2>
         <p>
-          Explore local cooking schools or chefs offering Kazakh cuisine classes
-          in cities like Almaty or Astana. These classes are a great way to
-          learn the secrets of traditional Kazakh dishes.
+          Slow-cooking over an open fire is a traditional technique used in
+          Kazakh cuisine. This method allows for the rich flavors of the
+          ingredients to meld together, creating a hearty and delicious dish.
         </p>
-        <ul>
-          <li>
-            <strong>Almaty Cooking School</strong> - Offers hands-on courses in
-            preparing dishes like <em>beshbarmak</em> and <em>manti</em>.
-          </li>
-          <li>
-            <strong>Astana Chef's Academy</strong> - Provides expert guidance on
-            making Kazakh delicacies like <em>baursak</em> (fried bread) and{" "}
-            <em>shashlik</em> (grilled meat).
-          </li>
-        </ul>
+        <img src="/nomad/images/3.jpg" alt="" />
+      </div>
+      <div className="cooking-page-content">
+        <h2>Use of Large Cast-Iron Pots (Kazan)</h2>
         <p>
-          Can't make it in person? Check out these online courses and videos for
-          making traditional Kazakh dishes:
+          Large cast-iron pots, known as kazan, are a staple in Kazakh cuisine.
+          These pots are perfect for cooking hearty stews and soups, and are
+          often used for slow-cooking over an open fire.
         </p>
-        <ul>
-          <li>
-            <a
-              href="https://www.example.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Kazakh Cooking Course Online
-            </a>{" "}
-            - A comprehensive online cooking course.
-          </li>
-          <li>
-            <a
-              href="https://www.example.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              YouTube: Learn Kazakh Cuisine
-            </a>{" "}
-            - A collection of free cooking tutorials.
-          </li>
-        </ul>
-      </section>
-
-      <section>
-        <h2>Kazakh Food Festivals</h2>
+        <img src="/nomad/images/2.jpg" alt="" />
+      </div>
+      <div className="cooking-page-content">
+        <h2>Steaming Dishes</h2>
         <p>
-          Join in the celebration of Kazakh cuisine at food festivals and events
-          around Kazakhstan. Experience the rich flavors of traditional dishes
-          firsthand!
+          Steaming dishes is a common technique used in Kazakh cuisine. This
+          method helps to preserve the nutrients and flavors of the ingredients,
+          creating a healthy and delicious dish.
         </p>
-        <ul>
-          <li>
-            <strong>Kazakhstan Food Festival</strong> - Held annually in Almaty,
-            this festival features local chefs, food stalls, and interactive
-            cooking demonstrations.
-          </li>
-          <li>
-            <strong>Central Asian Food Expo</strong> - A cultural event in
-            Astana that celebrates the food traditions of Kazakhstan and its
-            neighbors.
-          </li>
-        </ul>
-        <p>Check out upcoming food and culture tours:</p>
-        <ul>
-          <li>
-            <a
-              href="https://www.example.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Kazakh Culinary Tour
-            </a>{" "}
-            - A guided tour through Kazakhstan's food scene, including visits to
-            local markets and cooking classes.
-          </li>
-          <li>
-            <a
-              href="https://www.example.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Kazakh Cultural & Food Tour
-            </a>{" "}
-            - A week-long tour that focuses on both Kazakh food and cultural
-            heritage.
-          </li>
-        </ul>
-      </section>
+        <img src="/nomad/images/1.jpg" alt="" />
+      </div>
+      <div className="cooking-page-video">
+        <h2>Watch a Traditional Cooking Video</h2>
+        <iframe
+          src="https://www.youtube.com/embed/VIDEO_ID"
+          frameborder="0"
+          allowfullscreen
+        ></iframe>
+      </div>
     </div>
   );
 };
 
-export default Cooking;
+export default CookingPage;

@@ -10,6 +10,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 .nav {
   background-color: #975a2b;
   padding: 1rem;
@@ -17,6 +18,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 20px 60px;
+  position: relative;
 }
 
 .title {
@@ -47,4 +49,44 @@ ul li a:hover {
 
 .active {
   border-bottom: 2px solid white;
+}
+
+.burger {
+  display: none;
+  cursor: pointer;
+  flex-direction: column;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+}
+
+.burger div {
+  width: 30px;
+  height: 4px;
+  background-color: #f7de9f;
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .burger {
+    display: flex;
+  }
+
+  ul {
+    z-index: 100;
+    display: none;
+    flex-direction: column;
+    gap: 1.5rem;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    background-color: #975a2b;
+    padding: 1rem;
+    border-radius: 5px;
+    width: 200px;
+  }
+
+  ul.show {
+    display: flex;
+  }
 }
