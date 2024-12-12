@@ -1,0 +1,21 @@
+.dishDetails {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.dishName {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.dishImage {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.dishHistory {
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+}
