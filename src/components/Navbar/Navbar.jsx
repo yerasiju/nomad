@@ -5,13 +5,13 @@ import styles from "./Navbar.module.css";
 const Navbar = () => {
   return (
     <nav className={styles.nav}>
-      <NavLink to="/" className={styles.title}>
+      <NavLink to="/nomad" className={styles.title}>
         Nomad
       </NavLink>
       <ul>
         <li>
           <NavLink
-            to="/"
+            to="/nomad"
             className={({ isActive }) => (isActive ? styles.active : "")}
           >
             Home
@@ -20,7 +20,7 @@ const Navbar = () => {
 
         <li>
           <NavLink
-            to="/dishes"
+            to="/nomad/dishes"
             className={({ isActive }) => (isActive ? styles.active : "")}
           >
             Dishes
@@ -28,7 +28,7 @@ const Navbar = () => {
         </li>
         <li>
           <NavLink
-            to="/cooking"
+            to="/nomad/cooking"
             className={({ isActive }) => (isActive ? styles.active : "")}
           >
             Cooking
@@ -36,7 +36,7 @@ const Navbar = () => {
         </li>
         <li>
           <NavLink
-            to="/ingredients"
+            to="/nomad/ingredients"
             className={({ isActive }) => (isActive ? styles.active : "")}
           >
             Ingredients
@@ -44,7 +44,7 @@ const Navbar = () => {
         </li>
         <li>
           <NavLink
-            to="/blog"
+            to="/nomad/blog"
             className={({ isActive }) => (isActive ? styles.active : "")}
           >
             Blog
@@ -52,7 +52,7 @@ const Navbar = () => {
         </li>
         <li>
           <NavLink
-            to="/significance"
+            to="/nomad/significance"
             className={({ isActive }) => (isActive ? styles.active : "")}
           >
             Significance

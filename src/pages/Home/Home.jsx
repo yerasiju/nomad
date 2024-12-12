@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import styles from "./Home.module.css";
+import Reserve from "../../components/Reservation/Reserve";
 
 const Home = () => {
   const dishes = [
@@ -44,6 +45,7 @@ const Home = () => {
           </button>
         </div>
       </div>
+      <Reserve></Reserve>
     </>
   );
 };
