@@ -1,10 +1,17 @@
+@font-face {
+  font-family: "Alamsyah";
+  src: url("../../assets/fonts/alamsyah.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 .nav {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: #975a2b;
   padding: 1rem;
   display: flex;
   justify-content: space-between;
@@ -13,10 +20,11 @@
 }
 
 .title {
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   font-weight: bold;
-  color: white;
+  color: #f7de9f;
   text-decoration: none;
+  font-family: "Alamsyah", sans-serif;
 }
 
 ul {
@@ -29,14 +37,14 @@ ul {
 
 ul li a {
   text-decoration: none;
-  color: white;
+  color: #f7de9f;
   transition: color 0.3s;
 }
 
 ul li a:hover {
-  color: #ff9900;
+  color: white;
 }
 
 .active {
-  border-bottom: 2px solid #ff9900;
+  border-bottom: 2px solid white;
 }

@@ -49,7 +49,7 @@ const Dishes = () => {
 
   return (
     <div className={styles.dishesContainer}>
-      <h1 className={styles.title}>Kazakh Dishes</h1>
+      <h1 className={styles.title}>Kazakh National Dishes</h1>
       <ul className={styles.dishesList}>
         {dishes.map((dish) => (
           <li key={dish.id} className={styles.dishItem}>

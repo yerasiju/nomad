@@ -45,6 +45,26 @@ const Home = () => {
           </button>
         </div>
       </div>
+
+      <div className={styles.introSection}>
+        <h2 className={styles.introTitle}>Introduction to Kazakh Cuisine</h2>
+        <div className={styles.introContent}>
+          <p className={styles.introText}>
+            Kazakh cuisine is deeply rooted in the traditions of the nomadic way
+            of life. It is characterized by its hearty, meat-centric dishes that
+            showcase the importance of horse meat and mutton, along with an
+            array of dairy products and grains.
+          </p>
+          <p className={styles.introText}>
+            Nomadic traditions have had a profound influence on Kazakh food
+            culture. Meals are often prepared to be nourishing and long-lasting,
+            suitable for life on the move. Signature dishes like Beshbarmak, a
+            dish made with boiled meat and noodles, and Kurt, a dried cheese
+            snack, are central to Kazakh culinary identity.
+          </p>
+        </div>
+      </div>
+
       <Reserve></Reserve>
     </>
   );

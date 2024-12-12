@@ -8,22 +8,27 @@ import Significance from "./pages/Significance/Significance";
 import Dishes from "./pages/Dishes/Dishes";
 import Home from "./pages/Home/Home";
 import DishDetails from "./pages/DishDetails/DishDetails";
+import Footer from "./components/Footer/Footer";
+import "@fortawesome/fontawesome-free/css/all.min.css";
 
 const App = () => {
   return (
-    <div>
-      <Navbar />
+    <>
+      <div>
+        <Navbar />
 
-      <Routes>
-        <Route path="/nomad" element={<Home />} />
-        <Route path="/nomad/cooking" element={<Cooking />} />
-        <Route path="/nomad/ingredients" element={<Ingredients />} />
-        <Route path="/nomad/blog" element={<Blog />} />
-        <Route path="/nomad/significance" element={<Significance />} />
-        <Route path="/nomad/dishes" element={<Dishes />} />
-        <Route path="/nomad/dish/:id" element={<DishDetails />} />
-      </Routes>
-    </div>
+        <Routes>
+          <Route path="/nomad/" element={<Home />} />
+          <Route path="/nomad/cooking" element={<Cooking />} />
+          <Route path="/nomad/ingredients" element={<Ingredients />} />
+          <Route path="/nomad/blog" element={<Blog />} />
+          <Route path="/nomad/significance" element={<Significance />} />
+          <Route path="/nomad/dishes" element={<Dishes />} />
+          <Route path="/nomad/dish/:id" element={<DishDetails />} />
+        </Routes>
+      </div>
+      <Footer></Footer>
+    </>
   );
 };
 

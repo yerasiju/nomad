@@ -5,13 +5,13 @@ import styles from "./Navbar.module.css";
 const Navbar = () => {
   return (
     <nav className={styles.nav}>
-      <NavLink to="/nomad" className={styles.title}>
+      <NavLink to="/nomad/" className={styles.title}>
         Nomad
       </NavLink>
       <ul>
         <li>
           <NavLink
-            to="/nomad"
+            to="/nomad/"
             className={({ isActive }) => (isActive ? styles.active : "")}
           >
             Home

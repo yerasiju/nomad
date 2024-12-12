@@ -6,6 +6,7 @@
 .title {
   font-size: 2rem;
   margin-bottom: 20px;
+  font-family: "Alamsyah", sans-serif;
 }
 
 .dishesList {
@@ -27,6 +28,7 @@
 
 .dishName {
   font-size: 1.5rem;
+  font-family: "Alamsyah", sans-serif;
 }
 
 .dishDescription {
