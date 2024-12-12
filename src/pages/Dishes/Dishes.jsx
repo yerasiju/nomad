@@ -7,10 +7,13 @@ const Dishes = () => {
   const [error, setError] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
 
-  const API = "https://teacher-3kzh.onrender.com";
+  const API_BASE_URL =
+    import.meta.env.MODE === "development"
+      ? "/api"
+      : "https://teacher-3kzh.onrender.com/api";
 
   useEffect(() => {
-    fetch(`${API}/api/dishes`)
+    fetch(`${API_BASE_URL}/dishes`)
       .then((response) => {
         if (!response.ok) {
           throw new Error("Failed to fetch dishes");
@@ -25,7 +28,7 @@ const Dishes = () => {
         setError(err.message);
         setIsLoading(false);
       });
-  }, []);
+  }, [API_BASE_URL]);
 
   if (!dishes.length && !error && !isLoading) {
     return <p>No dishes available.</p>;
@@ -57,7 +60,7 @@ const Dishes = () => {
               alt={dish.name}
               className={styles.dishImage}
             />
-            <Link to={`/dish/${dish.id}`} className={styles.dishLink}>
+            <Link to={`/nomad/dish/${dish.id}`} className={styles.dishLink}>
               View Details
             </Link>
           </li>
