@@ -54,44 +54,55 @@ const Reservation = () => {
     <div className="reservation-container">
       <h1 className="reservation-heading">Make a Reservation</h1>
       <form onSubmit={sendMail} className="reservation-form">
-        <label className="reservation-label">Full Name:</label>
-        <input
-          type="text"
-          name="fullName"
-          value={formData.fullName}
-          onChange={handleChange}
-          required
-          className="reservation-input"
-        />
-        <label className="reservation-label">Phone Number:</label>
-        <input
-          type="tel"
-          name="number"
-          value={formData.number}
-          onChange={handleChange}
-          required
-          className="reservation-input"
-        />
-        <label className="reservation-label">Number of People:</label>
-        <input
-          type="number"
-          name="people"
-          value={formData.people}
-          onChange={handleChange}
-          required
-          className="reservation-input"
-          min="1"
-          max="20"
-        />
-        <label className="reservation-label">Reservation Time:</label>
-        <input
-          type="time"
-          name="time"
-          value={formData.time}
-          onChange={handleChange}
-          required
-          className="reservation-input"
-        />
+        <div className="first">
+          <label className="reservation-label">Full Name:</label>
+          <input
+            type="text"
+            name="fullName"
+            value={formData.fullName}
+            onChange={handleChange}
+            required
+            className="reservation-input"
+          />
+          <label className="reservation-label">Phone Number:</label>
+          <input
+            type="tel"
+            name="number"
+            value={formData.number}
+            onChange={handleChange}
+            required
+            className="reservation-input"
+          />
+        </div>
+
+        <div className="second">
+          <label className="reservation-label">
+            Number <br /> of People:
+          </label>
+          <input
+            type="number"
+            name="people"
+            value={formData.people}
+            onChange={handleChange}
+            required
+            className="reservation-input"
+            min="1"
+            max="20"
+          />
+          <label className="reservation-label">
+            Reservation <br />
+            Time:
+          </label>
+          <input
+            type="time"
+            name="time"
+            value={formData.time}
+            onChange={handleChange}
+            required
+            className="reservation-input"
+          />
+        </div>
+
         <label className="reservation-label">Message:</label>
         <textarea
           name="message"
@@ -100,6 +111,7 @@ const Reservation = () => {
           required
           className="reservation-textarea"
         />
+
         <button type="submit" className="reservation-button">
           Submit
         </button>

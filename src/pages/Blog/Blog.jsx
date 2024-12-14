@@ -7,27 +7,32 @@ const Blog = () => {
     <>
       <div className={styles.reserveContainer}>
         <div className={styles.introSection}>
-          <img
-            src="https://images.pexels.com/photos/4588816/pexels-photo-4588816.jpeg?auto=compress&cs=tinysrgb&w=600"
-            alt=""
-            className={styles.sectionImage}
-          ></img>
+          <h2 className={styles.introTitle}>
+            Discover the Flavors of Kazakh Cuisine
+          </h2>
+          <div className={styles.gg}>
+            <div className={styles.introContent}>
+              <p className={styles.introText}>
+                Step into the heart of nomadic tradition with a dining
+                experience like no other. Our Kazakh cuisine brings you the
+                rich, hearty flavors of the steppe, crafted from age-old recipes
+                passed down through generations.
+                <br />
+                Indulge in dishes that reflect the essence of a nomadic
+                lifestyle nourishing, flavorful, and unforgettable. From the
+                tender, slow-cooked perfection of Beshbarmak to the unique tang
+                of Kurt, each bite tells a story of tradition and adventure.
+                Reserve your table today and embark on a culinary journey
+                through the vibrant and timeless flavors of Kazakhstan. Let us
+                share the warmth and hospitality of our culture with you!
+              </p>
+            </div>
 
-          <h2 className={styles.introTitle}>Introduction to Kazakh Cuisine</h2>
-          <div className={styles.introContent}>
-            <p className={styles.introText}>
-              Kazakh cuisine is deeply rooted in the traditions of the nomadic
-              way of life. It is characterized by its hearty, meat-centric
-              dishes that showcase the importance of horse meat and mutton,
-              along with an array of dairy products and grains.
-            </p>
-            <p className={styles.introText}>
-              Nomadic traditions have had a profound influence on Kazakh food
-              culture. Meals are often prepared to be nourishing and
-              long-lasting, suitable for life on the move. Signature dishes like
-              Beshbarmak, a dish made with boiled meat and noodles, and Kurt, a
-              dried cheese snack, are central to Kazakh culinary identity.
-            </p>
+            <img
+              src="https://img.qazmonitor.com/E2V8FS8HytaKQs_botlEuz10gUe3Mt3-dqFftRSQE7c/dpr:1.75/rs:fit:530:320/el:true/f:webp/czM6Ly9rYXptb25pdG9yL2ltZy9hODU1OTFlZDljNGNmZjk1NmZlMWFiMzI2MTQ4Yjk0MS5wbmc"
+              alt=""
+              className={styles.sectionImage}
+            ></img>
           </div>
         </div>
         <Reservation></Reservation>

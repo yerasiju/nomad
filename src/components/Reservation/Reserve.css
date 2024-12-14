@@ -1,51 +1,115 @@
 .reservation-container {
-  max-width: 400px;
-  margin: 0 auto;
-  padding: 20px;
-  background: #f9f9f9;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: linear-gradient(135deg, #f3ebe0, #d1c3a7);
+  border-radius: 16px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  font-family: "Arial", sans-serif;
 }
 
 .reservation-heading {
+  font-family: "Alamsyah", sans-serif;
+  font-size: 2.5rem;
   text-align: center;
-  font-size: 2rem;
-  margin-bottom: 20px;
+  margin-bottom: 2rem;
+  color: #ba4f40;
+  position: relative;
+}
+
+.reservation-heading::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 4px;
+  background: #ba4f40;
+  margin: 0.5rem auto 0;
+  border-radius: 2px;
 }
 
 .reservation-form {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 1.5rem;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 1.5rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .reservation-label {
   font-weight: bold;
+  font-size: 1.1rem;
+  color: #ffffff;
+  max-width: 100px;
 }
 
 .reservation-input,
 .reservation-textarea {
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  width: 100%;
+  padding: 0.75rem;
+  border: 2px solid #d1c3a7;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: #5a4633;
+  background: #fff;
+  transition: border-color 0.3s ease;
+}
+
+.reservation-input:focus,
+.reservation-textarea:focus {
+  border-color: #ba4f40;
+  outline: none;
 }
 
 .reservation-textarea {
-  height: 100px;
+  height: 120px;
   resize: none;
 }
 
+.first,
+.second {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.first input,
+.second input {
+  flex: 1;
+}
+
 .reservation-button {
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: white;
+  padding: 0.75rem 1.5rem;
+  background: linear-gradient(135deg, #ba4f40, #f4a261);
+  color: #fff;
   border: none;
-  border-radius: 4px;
+  border-radius: 12px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
   cursor: pointer;
-  font-size: 1rem;
+  transition: background 0.3s ease;
 }
 
 .reservation-button:hover {
-  background-color: #0056b3;
+  background: linear-gradient(135deg, #953a2d, #d87f44);
+}
+
+.reservation-container {
+  background-image: url("https://assets.atdw-online.com.au/images/5d8340f0b36a032f839638f57af45542.jpeg?rect=125%2C0%2C2000%2C1500&w=745&h=559&&rot=360&q=eyJ0eXBlIjoibGlzdGluZyIsImxpc3RpbmdJZCI6IjYyNzg4YWQ5MDg3Y2Y1ZWIyZWNiYjRiOSIsImRpc3RyaWJ1dG9ySWQiOiI1NmIxZWI5MzQ0ZmVjYTNkZjJlMzIwYzgiLCJhcGlrZXlJZCI6IjU2YjFlZTU5MGNmMjEzYWQyMGRjNTgxOSJ9");
+  background-size: cover;
+  background-blend-mode: overlay;
+  border: 2px solid #ba4f40;
+}
+
+@media (max-width: 768px) {
+  .first,
+  .second {
+    flex-direction: column;
+  }
+
+  .reservation-button {
+    font-size: 1rem;
+    padding: 0.75rem;
+  }
 }
