@@ -19,14 +19,9 @@ const Navbar = () => {
         <div></div>
         <div></div>
       </div>
-      <ul className={menuOpen ? `${styles.show}` : ""}>
+      <ul className={`${styles.navList} ${menuOpen ? styles.show : ""}`}>
         <li>
-          <NavLink
-            to="/nomad/"
-            className={({ isActive }) => (isActive ? styles.active : "")}
-          >
-            Home
-          </NavLink>
+          <NavLink to="/nomad/">Home</NavLink>
         </li>
         <li>
           <NavLink
@@ -57,15 +52,7 @@ const Navbar = () => {
             to="/nomad/blog"
             className={({ isActive }) => (isActive ? styles.active : "")}
           >
-            Blog
-          </NavLink>
-        </li>
-        <li>
-          <NavLink
-            to="/nomad/significance"
-            className={({ isActive }) => (isActive ? styles.active : "")}
-          >
-            Significance
+            Reserve
           </NavLink>
         </li>
       </ul>

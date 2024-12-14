@@ -1,112 +1,88 @@
-body {
-  font-family: "Roboto", sans-serif;
-  background-color: #f7f8fc;
-  color: #333;
-  margin: 0;
-  padding: 0;
-  line-height: 1.6;
-}
-
 .dishDetails {
-  padding: 30px;
+  padding: 20px;
+  text-align: center;
+  background-color: #fdf5e6;
+  border-radius: 15px;
   max-width: 900px;
   margin: 40px auto;
-  background: #fff;
-  border-radius: 15px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  animation: fadeIn 1s ease-in-out;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
 }
 
 .dishName {
   font-size: 2.5rem;
-  font-weight: 700;
-  color: #2c3e50;
-  text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   font-family: "Alamsyah", sans-serif;
+  color: #975a2b;
+  text-transform: uppercase;
 }
 
 .dishImage {
-  display: block;
   max-width: 100%;
-  height: auto;
-  border-radius: 15px;
-  margin: 20px auto;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .dishHistory {
-  font-size: 1.2rem;
-  color: #7f8c8d;
-  line-height: 1.8;
+  font-size: 1rem;
+  color: #5c4033;
   text-align: justify;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .dishDetails h3 {
   font-size: 1.8rem;
-  color: #34495e;
-  margin-top: 30px;
+  color: #975a2b;
+  margin-top: 20px;
   border-bottom: 2px solid #ecf0f1;
   padding-bottom: 5px;
+  text-transform: capitalize;
 }
 
 .dishDetails ul {
-  list-style-type: disc;
-  padding-left: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
   color: #2c3e50;
 }
 
 .dishDetails ul li {
-  font-size: 1.1rem;
-  margin-bottom: 10px;
+  font-size: 1rem;
+  border: 2px solid #975a2b;
+  border-radius: 5px;
+  padding: 10px;
+  background: #fffaf0;
+  width: 100%;
+  max-width: 800px;
+  text-align: left;
 }
 
-.dishDetails button a {
+.dishDetails p {
+  font-size: 1rem;
+  color: #5c4033;
+  text-align: justify;
+  margin-bottom: 15px;
+}
+
+.dishDetails a {
   display: inline-block;
+  color: #975a2b;
   text-decoration: none;
-  background: #3498db;
-  color: #fff;
-  padding: 10px 20px;
-  margin-top: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  font-size: 1.1rem;
   font-weight: bold;
-  transition: all 0.3s ease;
+  padding: 8px 15px;
+  border: 2px solid #975a2b;
+  border-radius: 5px;
+  background-color: transparent;
+  transition: background-color 0.3s, color 0.3s;
 }
 
-.dishDetails button:active,
-a:active {
-  transform: translateY(2px);
-}
-
-@media (max-width: 768px) {
-  .dishName {
-    font-size: 2rem;
-  }
-
-  .dishHistory {
-    font-size: 1rem;
-  }
-
-  .dishDetails h3 {
-    font-size: 1.5rem;
-  }
-
-  .dishDetails ul li {
-    font-size: 1rem;
-  }
+.dishDetails a:hover {
+  background-color: #975a2b;
+  color: #fffaf0;
 }

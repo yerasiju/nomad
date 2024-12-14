@@ -13,11 +13,10 @@
 
 .nav {
   background-color: #975a2b;
-  padding: 1rem;
+  padding: 20px 60px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 60px;
   position: relative;
 }
 
@@ -29,7 +28,7 @@
   font-family: "Alamsyah", sans-serif;
 }
 
-ul {
+.navList {
   list-style: none;
   display: flex;
   gap: 1rem;
@@ -37,17 +36,17 @@ ul {
   padding: 0;
 }
 
-ul li a {
+.navList li a {
   text-decoration: none;
   color: #f7de9f;
   transition: color 0.3s;
 }
 
-ul li a:hover {
+.navList li a:hover {
   color: white;
 }
 
-.active {
+.navList li a.active {
   border-bottom: 2px solid white;
 }
 
@@ -72,7 +71,7 @@ ul li a:hover {
     display: flex;
   }
 
-  ul {
+  .navList {
     z-index: 100;
     display: none;
     flex-direction: column;
@@ -86,7 +85,7 @@ ul li a:hover {
     width: 200px;
   }
 
-  ul.show {
+  .navList.show {
     display: flex;
   }
 }

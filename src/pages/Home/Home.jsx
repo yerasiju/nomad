@@ -54,11 +54,8 @@ const Home = () => {
             <h1 className={styles.welcomeText}>
               Discover the Flavors of Kazakhstan
             </h1>
-            <button
-              className={styles.ctaButton}
-              onClick={() => (window.location.href = "/nomad/dishes")}
-            >
-              Explore Dishes
+            <button className={styles.ctaButton}>
+              <a href="/nomad/dishes">Explore Dishes</a>
             </button>
           </div>
           <button onClick={nextSlide} className={styles.navButton}>

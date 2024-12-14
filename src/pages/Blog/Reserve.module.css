@@ -1,0 +1,32 @@
+.reserveContainer {
+  display: flex;
+  background-color: #fff5da;
+}
+
+.introSection {
+  padding: 50px;
+
+  text-align: center;
+}
+
+.sectionImage {
+  color: #333;
+}
+
+.introTitle {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.introContent {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.introText {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  color: #555;
+}
