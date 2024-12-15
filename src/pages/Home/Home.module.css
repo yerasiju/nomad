@@ -240,6 +240,10 @@
   .introText {
     font-size: 1rem;
   }
+  .sectionImage {
+    color: #333;
+    width: 400px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -271,6 +275,10 @@
 
   .aboutText p {
     font-size: 0.9rem;
+  }
+  .sectionImage {
+    color: #333;
+    width: 400px;
   }
 }
 
@@ -311,5 +319,9 @@
 
   .aboutText p {
     font-size: 0.8rem;
+  }
+  .sectionImage {
+    color: #333;
+    width: 400px;
   }
 }
