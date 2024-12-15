@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import styles from "./Home.module.css";
-import Reserve from "../../components/Reservation/Reserve";
-
+import { Link } from "react-router-dom";
 const Home = () => {
   const dishes = [
     { id: 1, name: "Beshbarmak", image: "/nomad/images/beshbarmakk.jpg" },
@@ -55,7 +54,7 @@ const Home = () => {
               Discover the Flavors of Kazakhstan
             </h1>
             <button className={styles.ctaButton}>
-              <a href="/nomad/dishes">Explore Dishes</a>
+              <Link to={`/nomad/dishes`}>Explore Dishes</Link>
             </button>
           </div>
           <button onClick={nextSlide} className={styles.navButton}>
