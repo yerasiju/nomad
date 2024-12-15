@@ -105,17 +105,86 @@ body {
 }
 
 .info-text p {
-  font-size: 30px;
+  font-size: 1rem;
 }
+
 @media screen and (max-width: 1024px) {
   .content {
     flex-direction: column;
     align-items: center;
-    text-align: center;
     gap: 1.5rem;
   }
 
   .info {
     flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .cooking-page-content img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .cooking-page-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .cooking-page-content p {
+    font-size: 0.95rem;
+  }
+
+  .cooking-page-video h2 {
+    font-size: 1.8rem;
+  }
+
+  .cooking-page-video iframe {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .content {
+    padding: 1.5rem;
+  }
+
+  .cooking-page {
+    padding: 1.5rem;
+  }
+
+  .cooking-page-content p {
+    font-size: 0.9rem;
+  }
+
+  .cooking-page-content button a {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .content {
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .cooking-page {
+    gap: 2rem;
+    padding: 1rem;
+  }
+
+  .cooking-page-content h2 {
+    font-size: 1.3rem;
+  }
+
+  .cooking-page-content p {
+    font-size: 0.85rem;
+  }
+
+  .cooking-page-content button {
+    padding: 0.75rem 1rem;
+  }
+
+  .cooking-page-video h2 {
+    font-size: 1.5rem;
   }
 }

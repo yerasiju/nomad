@@ -211,3 +211,105 @@
   font-size: 20px;
   padding: 20px;
 }
+
+@media (max-width: 1024px) {
+  .heroSection {
+    height: 80vh;
+  }
+
+  .welcomeText {
+    font-size: 2rem;
+    padding: 0 20px;
+  }
+
+  .ctaButton {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+
+  .aboutItem {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .aboutImage img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .introText {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .heroSection {
+    height: 70vh;
+  }
+
+  .welcomeText {
+    font-size: 1.8rem;
+  }
+
+  .ctaButton {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+
+  .introText {
+    font-size: 0.95rem;
+  }
+
+  .aboutImage img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .aboutText h3 {
+    font-size: 1.6rem;
+  }
+
+  .aboutText p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .heroSection {
+    height: 60vh;
+  }
+
+  .welcomeText {
+    font-size: 1.5rem;
+  }
+
+  .ctaButton {
+    font-size: 0.8rem;
+    padding: 6px 12px;
+  }
+
+  .introSection {
+    padding: 20px;
+  }
+
+  .introTitle {
+    font-size: 1.5rem;
+  }
+
+  .introText {
+    font-size: 0.85rem;
+  }
+
+  .aboutImage img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .aboutText h3 {
+    font-size: 1.4rem;
+  }
+
+  .aboutText p {
+    font-size: 0.8rem;
+  }
+}
